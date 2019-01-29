@@ -1,3 +1,10 @@
+require 'rest-client'
+require 'json'
+require 'pry'
+
+character_data = RestClient.get("http://swapi.co/api/people")
+data = JSON.parse(character_data)
+
 def welcome
   # puts out a welcome message here!
 end
