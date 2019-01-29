@@ -17,8 +17,10 @@ def get_character_movies_from_api(character_name)
     film_response_hash = JSON.parse(film_response_string)
   end
 
+  puts character_films["title"]
 
-binding.pry
+  binding.pry
+
   # iterate over the response hash to find the collection of `films` for the given
   #   `character`
   # collect those film API urls, make a web request to each URL to get the info
@@ -35,6 +37,7 @@ get_character_movies_from_api("Darth Vader")
 
 # def print_movies(films)
 #   # some iteration magic and puts out the movies in a nice list
+
 # end
 
 # def show_character_movies(character)
